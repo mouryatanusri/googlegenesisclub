@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Google Genesis Club | GGC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="logo-intro" id="logoIntro" aria-hidden="true">
+    <img id="heroLogo" src="./assets/ggc-logo.png" alt="">
+  </div>
+
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <a href="#home" class="brand" aria-label="Google Genesis Club home">
+      <img src="./assets/ggc-logo.png" alt="" class="brand-logo">
+      <span class="brand-name">GGC</span>
+    </a>
+    
+<div class="nav-links">
+  <a href="#home" class="active" aria-current="page">Home</a>
+  <a href="#events">Events</a>
+  <a href="#team">Team</a>
+</div>
+
+    <a href="#join" class="join-btn">Join Us <span aria-hidden="true">→</span></a>
+  </nav>
+
+  <main class="ggc-home" id="home">
+    <section class="home-hero">
+      <!-- Flowing, softly glowing sculptural paper folds -->
+      
+<!-- SOFT FLOWING SCULPTURAL BACKGROUND -->
+<div class="sculptural-background" aria-hidden="true">
+
+  <svg class="sculpture-svg"
+       viewBox="0 0 1600 900"
+       preserveAspectRatio="xMidYMid slice"
+       xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+      <!-- White paper-like surfaces -->
+      <linearGradient id="foldWhite" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#e9edf4"/>
+        <stop offset="45%" stop-color="#f8f9fc"/>
+        <stop offset="100%" stop-color="#ffffff"/>
+      </linearGradient>
+
+      <linearGradient id="foldReverse" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#e7ebf2"/>
+        <stop offset="55%" stop-color="#fbfcff"/>
+        <stop offset="100%" stop-color="#ffffff"/>
+      </linearGradient>
+
+      <!-- Fading coloured edges -->
+      <linearGradient id="blueEdge" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#4285f4" stop-opacity="0"/>
+        <stop offset="40%" stop-color="#4285f4" stop-opacity=".42"/>
+        <stop offset="100%" stop-color="#4285f4" stop-opacity="0"/>
+      </linearGradient>
+
+      <linearGradient id="redEdge" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ea4335" stop-opacity="0"/>
+        <stop offset="45%" stop-color="#ea4335" stop-opacity=".36"/>
+        <stop offset="100%" stop-color="#ea4335" stop-opacity="0"/>
+      </linearGradient>
+
+      <linearGradient id="greenEdge" x1="1" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#34a853" stop-opacity="0"/>
+        <stop offset="45%" stop-color="#34a853" stop-opacity=".38"/>
+        <stop offset="100%" stop-color="#34a853" stop-opacity="0"/>
+      </linearGradient>
+
+      <linearGradient id="yellowEdge" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="#fbbc05" stop-opacity="0"/>
+        <stop offset="45%" stop-color="#fbbc05" stop-opacity=".48"/>
+        <stop offset="100%" stop-color="#fbbc05" stop-opacity="0"/>
+      </linearGradient>
+
+      <filter id="softFoldShadow" x="-40%" y="-40%" width="180%" height="180%">
+        <feDropShadow dx="0" dy="12" stdDeviation="20"
+          flood-color="#a8b1c0" flood-opacity=".13"/>
+      </filter>
+
+      <filter id="softColourGlow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="14"/>
+      </filter>
+    </defs>
+
+    <!-- TOP LEFT WHITE FOLDS -->
+    <g class="sculpture-layer sculpture-blue">
+      <path
+        d="M -150 -100 H 680
+           C 505 65 365 120 220 195
+           C 85 265 -30 330 -150 420 Z"
+        fill="url(#foldWhite)"
+        filter="url(#softFoldShadow)"/>
+
+      <path
+        d="M -150 420 C -30 330 85 265 220 195
+           C 365 120 505 65 680 -100"
+        fill="none" stroke="url(#blueEdge)"
+        stroke-width="24" filter="url(#softColourGlow)"/>
+
+      <path
+        d="M -150 420 C -30 330 85 265 220 195
+           C 365 120 505 65 680 -100"
+        fill="none" stroke="url(#blueEdge)" stroke-width="1.5"/>
+
+      <path
+        d="M -160 460 C 15 315 145 285 285 210
+           C 425 135 540 40 710 -100"
+        fill="none" stroke="#ffffff" stroke-opacity=".85"
+        stroke-width="3"/>
+
+      <path
+        d="M -170 495 C 10 355 175 300 325 215
+           C 470 135 590 25 745 -100"
+        fill="none" stroke="#ffffff" stroke-opacity=".5"
+        stroke-width="2"/>
+    </g>
+
+    <!-- LOWER LEFT WHITE FOLDS -->
+    <g class="sculpture-layer sculpture-red">
+      <path
+        d="M -150 440
+           C 90 485 180 555 310 665
+           C 450 785 540 850 730 1000
+           H -150 Z"
+        fill="url(#foldReverse)"
+        filter="url(#softFoldShadow)"/>
+
+      <path
+        d="M -150 440 C 90 485 180 555 310 665
+           C 450 785 540 850 730 1000"
+        fill="none" stroke="url(#redEdge)"
+        stroke-width="26" filter="url(#softColourGlow)"/>
+
+      <path
+        d="M -150 440 C 90 485 180 555 310 665
+           C 450 785 540 850 730 1000"
+        fill="none" stroke="url(#redEdge)" stroke-width="1.5"/>
+
+      <path
+        d="M -150 485 C 75 530 165 610 285 715
+           C 410 820 505 900 640 1000"
+        fill="none" stroke="#ffffff"
+        stroke-opacity=".9" stroke-width="3"/>
+
+      <path
+        d="M -150 520 C 45 560 150 655 260 755
+           C 370 850 450 930 550 1000"
+        fill="none" stroke="#ffffff"
+        stroke-opacity=".55" stroke-width="2"/>
+    </g>
+
+    <!-- UPPER RIGHT WHITE FOLDS -->
+    <g class="sculpture-layer sculpture-green">
+      <path
+        d="M 1700 -100 H 1530
+           C 1490 65 1515 185 1570 275
+           C 1610 350 1655 390 1700 425 Z"
+        fill="url(#foldWhite)"
+        filter="url(#softFoldShadow)"/>
+
+      <path
+        d="M 1700 425 C 1655 390 1610 350 1570 275
+           C 1515 185 1490 65 1530 -100"
+        fill="none" stroke="url(#greenEdge)"
+        stroke-width="26" filter="url(#softColourGlow)"/>
+
+      <path
+        d="M 1700 425 C 1655 390 1610 350 1570 275
+           C 1515 185 1490 65 1530 -100"
+        fill="none" stroke="url(#greenEdge)" stroke-width="1.5"/>
+
+      <path
+        d="M 1710 470 C 1645 410 1580 355 1545 280
+           C 1490 165 1470 40 1500 -100"
+        fill="none" stroke="#ffffff"
+        stroke-opacity=".9" stroke-width="3"/>
+
+      <path
+        d="M 1720 510 C 1610 425 1555 365 1520 280
+           C 1460 155 1450 30 1470 -100"
+        fill="none" stroke="#ffffff"
+        stroke-opacity=".55" stroke-width="2"/>
+    </g>
+
+    <!-- LOWER RIGHT WHITE FOLDS -->
+    <g class="sculpture-layer sculpture-yellow">
+      <path
+        d="M 950 1000
+           C 1120 890 1260 765 1400 675
+           C 1510 600 1610 565 1700 555
+           V 1000 Z"
+        fill="url(#foldReverse)"
+        filter="url(#softFoldShadow)"/>
+
+      <path
+        d="M 950 1000 C 1120 890 1260 765 1400 675
+           C 1510 600 1610 565 1700 555"
+        fill="none" stroke="url(#yellowEdge)"
+        stroke-width="28" filter="url(#softColourGlow)"/>
+
+      <path
+        d="M 950 1000 C 1120 890 1260 765 1400 675
+           C 1510 600 1610 565 1700 555"
+        fill="none" stroke="url(#yellowEdge)" stroke-width="1.5"/>
+
+      <path
+        d="M 1030 1000 C 1200 885 1320 770 1440 700
+           C 1560 630 1640 610 1710 605"
+        fill="none" stroke="#ffffff"
+        stroke-opacity=".9" stroke-width="3"/>
+
+      <path
+        d="M 1110 1000 C 1260 900 1380 790 1490 735
+           C 1600 675 1660 665 1720 660"
+        fill="none" stroke="#ffffff"
+        stroke-opacity=".55" stroke-width="2"/>
+    </g>
+
+  </svg>
+</div>
+
+
+      <div class="home-content">
+        <h1 class="home-title"><span class="google-word"><span class="letter-blue">G</span><span class="letter-red">o</span><span class="letter-yellow">o</span><span class="letter-blue">g</span><span class="letter-green">l</span><span class="letter-red">e</span></span><span class="genesis-word">Genesis Club</span></h1>
+        <div class="home-dots" aria-hidden="true"><span class="dot-blue"></span><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+        <div class="intro-card">
+          <p class="home-tagline">Where curiosity meets technology.</p>
+          <div class="home-description">
+            <p>The Google Genesis Club was founded to provide a dynamic platform for all technology enthusiasts to explore their interests beyond the classroom. We believe in hands-on learning and creating a supportive environment where ideas can flourish.</p>
+            <p>Our events cover a wide range of topics, including artificial intelligence, web development, cybersecurity, game development, and competitive programming. Whether you're a coding pro or just starting your tech journey, our community is here to support your growth.</p>
+          </div>
+        </div>
+        <div class="hindustan-affiliation">
+          <div class="affiliation-divider"></div>
+          <p class="affiliation-label">PROUDLY AT</p>
+          <img src="./assets/hindustan-logo.png" alt="Hindustan Institute of Technology and Science" class="hindustan-logo">
+        </div>
+      </div>
+    </section>
+  </main>
+  
+<!-- =========================================
+     GGC EVENTS — 3D GLASS SHOWCASE
+========================================= -->
+
+<section class="ggc-events" id="events">
+
+  <div class="events-heading">
+    <span class="events-eyebrow">GGC • OUR JOURNEY</span>
+
+    <h2>
+      Moments That <span>Made Us.</span>
+    </h2>
+
+    <p>
+      From exploring AI to defending the digital world,
+      discover the experiences that shaped our community.
+    </p>
+  </div>
+
+<!-- EVENTS CATEGORY TOGGLE -->
+<div class="events-toggle" role="group" aria-label="Event categories">
+
+  <button
+    type="button"
+    class="events-toggle-btn active"
+    data-view="past"
+    aria-pressed="true"
+  >
+    Past Events
+  </button>
+
+  <button
+    type="button"
+    class="events-toggle-btn"
+    data-view="upcoming"
+    aria-pressed="false"
+  >
+    Upcoming Events
+  </button>
+
+</div>
+
+<!-- UPCOMING EVENTS EMPTY STATE -->
+<div class="events-coming-soon" id="eventsComingSoon" hidden>
+  <span class="coming-soon-sparkle">✦</span>
+  <h3>Something exciting is on its way.</h3>
+  <p>Stay tuned for upcoming GGC events and experiences.</p>
+</div>
+
+  <div class="events-showcase">
+
+    <div class="events-topline">
+      <span>PAST EVENTS / GGC</span>
+      <span id="eventsCounter">01 / 03</span>
+    </div>
+
+    <div class="events-stage" id="eventsStage">
+
+      <!-- EVENT 1 -->
+      <article class="event-frame" data-event="0"
+        tabindex="0" role="button"
+        aria-label="View Prompt Engineering with Gemini">
+
+        <div class="event-frame-inner">
+
+          <div class="event-image-wrap">
+            <img src="./assets/event1.jpg"
+              alt="Prompt Engineering with Gemini event">
+          </div>
+
+          <div class="event-frame-content">
+            <span class="event-category">MASTERCLASS</span>
+
+            <h3>Prompt Engineering<br>with Gemini</h3>
+
+            <p>10 December 2025</p>
+
+            <span class="event-open">
+              Explore Event <span>↗</span>
+            </span>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- EVENT 2 -->
+      <article class="event-frame" data-event="1"
+        tabindex="0" role="button"
+        aria-label="View Machine Learning Essentials">
+
+        <div class="event-frame-inner">
+
+          <div class="event-image-wrap">
+            <img src="./assets/event2.jpg"
+              alt="Machine Learning Essentials event">
+          </div>
+
+          <div class="event-frame-content">
+            <span class="event-category">TECHNICAL SESSION</span>
+
+            <h3>Machine Learning<br>Essentials</h3>
+
+            <p>25 November 2025</p>
+
+            <span class="event-open">
+              Explore Event <span>↗</span>
+            </span>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- EVENT 3 -->
+      <article class="event-frame" data-event="2"
+        tabindex="0" role="button"
+        aria-label="View SOC Operations Workshop">
+
+        <div class="event-frame-inner">
+
+          <div class="event-image-wrap">
+            <img src="./assets/event3.jpg"
+              alt="SOC Operations Workshop event">
+          </div>
+
+          <div class="event-frame-content">
+            <span class="event-category">CYBERSECURITY WORKSHOP</span>
+
+            <h3>SOC Operations<br>Workshop</h3>
+
+            <p>27 August 2026</p>
+
+            <span class="event-open">
+              Explore Event <span>↗</span>
+            </span>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+
+    <div class="events-navigation">
+
+      <button class="event-nav-btn" id="eventPrev"
+        aria-label="Previous event">
+        ←
+      </button>
+
+      <div class="event-progress">
+        <span class="event-progress-dot active"></span>
+        <span class="event-progress-dot"></span>
+        <span class="event-progress-dot"></span>
+      </div>
+
+      <button class="event-nav-btn" id="eventNext"
+        aria-label="Next event">
+        →
+      </button>
+
+    </div>
+
+    <p class="events-hint">
+      Select an event to discover its story
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================
+     THINKATHON 9.0 — FLAGSHIP TICKET
+===================================== -->
+
+<!-- THINKATHON 9.0 — TICKET MACHINE -->
+
+<section class="thinkathon-section" id="thinkathon">
+
+  
+<div class="thinkathon-heading">
+
+  <span class="thinkathon-eyebrow">
+    FROM THE GGC ARCHIVES
+  </span>
+
+  <h2 class="thinkathon-title">
+    <span class="thinkathon-google-text">THINKATHON 9.0</span>
+  </h2>
+
+  <p class="thinkathon-subtitle">
+    Some Ideas Deserve a Second Look.
+  </p>
+
+</div>
+
+
+  
+
+<div class="thinkathon-scene">
+
+  <!-- SILVER PRINTER -->
+  <div class="thinkathon-machine" aria-hidden="true">
+    <div class="thinkathon-machine-slot"></div>
+  </div>
+
+  <!-- PAPER COMING OUT OF THE BLACK SLOT -->
+  <div class="thinkathon-paper-feed">
+    <a
+      href="./thinkathon.html"
+      class="thinkathon-ticket"
+      id="thinkathonTicket"
+      aria-label="Explore Thinkathon 9.0 event recap"
+    >
+      <img
+        src="./assets/thinkathon-ticket.png"
+        alt="Thinkathon 9.0 admission ticket"
+      >
+    </a>
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================
+     GGC — MEET THE TEAM
+========================================= -->
+
+<section class="ggc-team" id="team">
+
+  <div class="team-heading">
+    <span class="team-eyebrow">THE PEOPLE BEHIND GGC</span>
+
+    <h2>Meet the <span>Team.</span></h2>
+
+    <p>
+      The minds, makers, and innovators
+      bringing the Google Genesis Club to life.
+    </p>
+  </div>
+
+  <!-- Team member cards will go here -->
+
+</section>
+
+
+
+<!-- EVENT DETAILS OVERLAY -->
+
+<div class="event-modal" id="eventModal"
+  aria-hidden="true">
+
+  <div class="event-modal-backdrop"></div>
+
+  <div class="event-modal-card"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalEventTitle">
+
+    <button class="event-modal-close"
+      id="eventModalClose"
+      aria-label="Close event details">
+      ×
+    </button>
+
+    <div class="event-modal-image">
+      <img id="modalEventImage" src="" alt="">
+    </div>
+
+    <div class="event-modal-body">
+
+      <span class="event-modal-category"
+        id="modalEventCategory"></span>
+
+      <h2 id="modalEventTitle"></h2>
+
+      <div class="event-modal-meta">
+        <span id="modalEventDate"></span>
+        <span id="modalEventPlace"></span>
+      </div>
+
+      <div class="event-modal-divider"></div>
+
+      <h4>ABOUT THE EVENT</h4>
+
+      <p id="modalEventDescription"></p>
+
+      <span class="event-completed">
+        ● EVENT COMPLETED
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <script src="./script.js"></script>
+  
+<!-- =========================================
+     GGC — FINAL FOOTER
+========================================= -->
+
+<footer class="ggc-footer" id="contact">
+
+  <div class="footer-container">
+
+    <!-- CLUB IDENTITY -->
+    <div class="footer-card footer-brand">
+
+      <div class="footer-brand-header">
+        <img src="./assets/ggc-logo.png" alt="GGC Logo">
+        <h3>Google Genesis Club</h3>
+      </div>
+
+      <p>
+        Empowering students with Google technologies.
+        We are a community of dreamers, builders,
+        and innovators.
+      </p>
+
+      <div class="footer-affiliation">
+        <span>AFFILIATED WITH</span>
+        <div class="footer-hits-logo">
+          <img
+            src="./assets/hindustan-logo.png"
+            alt="Hindustan Institute of Technology and Science"
+          >
+        </div>
+      </div>
+
+    </div>
+
+    <!-- JOIN COMMUNITY -->
+    
+<!-- JOIN THE GGC TEAM -->
+<div class="footer-card footer-join" id="join">
+
+  <h4>JOIN THE GGC TEAM</h4>
+
+  <p>
+    Have ideas worth bringing to life?
+    Become a part of Google Genesis Club!
+    Submit your resume, attend an interview,
+    and turn your creativity into meaningful impact.
+  </p>
+
+  <a
+    href="YOUR_GOOGLE_FORM_LINK"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="footer-join-button"
+  >
+    Apply to Join GGC
+    <span aria-hidden="true">↗</span>
+  </a>
+
+  <span class="footer-join-note">
+    APPLY · INTERVIEW · INNOVATE
+  </span>
+
+</div>
+
+    <!-- CONTACT -->
+    
+<!-- CONNECT -->
+
+<!-- CONNECT -->
+<div class="footer-card footer-contact">
+
+  <h4>CONNECT</h4>
+
+  <div class="footer-connect-details">
+
+    <!-- GMAIL -->
+    <a
+      href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=genesisclub.ggc%40gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="footer-contact-item"
+    >
+      <span class="footer-contact-icon footer-mail">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m3 7 9 6 9-6"/>
+        </svg>
+      </span>
+      <span>genesisclub.ggc@gmail.com</span>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a
+      href="https://www.instagram.com/ggc_hits/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="footer-contact-item"
+    >
+      <span class="footer-contact-icon footer-instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" class="icon-dot"/>
+        </svg>
+      </span>
+      <span>@ggc_hits</span>
+    </a>
+
+    <!-- WHATSAPP -->
+    <a
+      href="https://chat.whatsapp.com/K6gWAzH45Ej1cENGG0IDPZ"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="footer-contact-item"
+    >
+      <span class="footer-contact-icon footer-whatsapp">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.5 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20.5l1.5-5.1A8.5 8.5 0 1 1 20.5 11.5Z"/>
+          <path d="M8.5 8.5c.3-.5.6-.5.9-.5l1 2.1-.7.9c.7 1.4 1.7 2.4 3.1 3.1l.9-.7 2.1 1c0 .3 0 .6-.5.9-.8.6-1.8.7-2.8.3-2.4-.9-4.3-2.8-5.2-5.2-.4-1-.3-2 .2-2.9Z"/>
+        </svg>
+      </span>
+      <span>Join our WhatsApp Community</span>
+    </a>
+
+    <!-- LINKEDIN -->
+    <a
+      href="https://www.linkedin.com/company/google-genesis-club/home/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="footer-contact-item"
+    >
+      <span class="footer-contact-icon footer-linkedin">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="3"/>
+          <path d="M8 10v7M8 7.5v.1M12 17v-7M12 13a3 3 0 0 1 6 0v4"/>
+        </svg>
+      </span>
+      <span>Google Genesis Club on LinkedIn</span>
+    </a>
+
+  </div>
+
+</div>
+
+
+  <!-- FOUR CIRCULAR SOCIAL ICONS -->
+
+
+
+      <div class="footer-socials">
+
+        <!-- Replace # with official links -->
+        <a
+          href="#"
+          aria-label="GGC LinkedIn"
+          class="footer-social"
+        >
+          in
+        </a>
+
+        <a
+          href="#"
+          aria-label="GGC Instagram"
+          class="footer-social"
+        >
+          ◎
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+
+    <div class="footer-bottom-left">
+      <span>© 2026 Google Genesis Club.</span>
+      <span class="footer-dot">·</span>
+      <a href="./privacy.html">Privacy</a>
+      <span class="footer-dot">·</span>
+      <a href="./terms.html">Terms</a>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
