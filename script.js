@@ -452,3 +452,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* =========================================
+   GGC TEAM PUZZLE INTERACTIONS
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const teamPuzzles =
+    document.querySelectorAll(".team-puzzle");
+
+  const teamNames = {
+    core: "Core Team",
+    technical: "Technical Team",
+    nontechnical: "Non-Technical Team",
+    media: "Media Team"
+  };
+
+  teamPuzzles.forEach(puzzle => {
+
+    puzzle.addEventListener("click", () => {
+
+      const team = puzzle.dataset.team;
+
+      // Temporary action until ID galleries are added.
+      alert(
+        teamNames[team] +
+        " — Member ID gallery coming soon!"
+      );
+
+    });
+
+  });
+
+});

@@ -3321,3 +3321,477 @@ a { text-decoration: none; }
 .events-showcase[hidden] {
   display: none !important;
 }
+
+/* =========================================
+   GGC TEAM — FIXED GLASS PUZZLE SECTION
+========================================= */
+
+.ggc-team {
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  padding: 110px 30px 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+  background:
+    radial-gradient(circle at 10% 15%,
+      rgba(66,133,244,.08), transparent 35%),
+    linear-gradient(180deg, #fff, #f7f9fd);
+}
+
+.ggc-team::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(70,90,120,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(70,90,120,.035) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.ggc-team .team-heading {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ggc-team .team-eyebrow {
+  display: block;
+  color: #4285f4;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.ggc-team .team-heading h2 {
+  margin: 0;
+  color: #1b2233;
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.15;
+}
+
+.ggc-team .team-heading h2 span {
+  background: linear-gradient(110deg, #4285f4, #6375db);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ggc-team .team-heading p {
+  margin: 18px auto 0;
+  color: #79869d;
+  font-size: clamp(15px, 1.5vw, 19px);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Four equal puzzle slots */
+
+.ggc-team .team-puzzle-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 20px;
+  width: min(100%, 1220px);
+  margin: 75px auto 0;
+  padding: 20px 0 45px;
+  box-sizing: border-box;
+}
+
+/* Reset all inherited button styles */
+
+.ggc-team button.team-puzzle {
+  --piece-color: #4285f4;
+  --piece-rotation: 0deg;
+
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  overflow: visible;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  transform: rotate(var(--piece-rotation));
+  transition: transform .55s cubic-bezier(.2,.8,.2,1);
+}
+
+/* Team colours */
+
+.ggc-team button.team-core {
+  --piece-color: #7daef2;
+  --piece-rotation: -6deg;
+}
+
+.ggc-team button.team-technical {
+  --piece-color: #ef9690;
+  --piece-rotation: 5deg;
+}
+
+.ggc-team button.team-nontechnical {
+  --piece-color: #f3cf6b;
+  --piece-rotation: -4deg;
+}
+
+.ggc-team button.team-media {
+  --piece-color: #87cda8;
+  --piece-rotation: 6deg;
+}
+
+/* Puzzle silhouette fills the button */
+
+.ggc-team .team-puzzle .puzzle-svg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  filter:
+    drop-shadow(0 12px 10px rgba(35,50,70,.12))
+    drop-shadow(0 25px 22px rgba(35,50,70,.08));
+  transition: filter .4s ease;
+}
+
+.ggc-team .team-puzzle .puzzle-svg path {
+  fill: var(--piece-color);
+  fill-opacity: .82;
+  stroke: rgba(255,255,255,.85);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+/* Keep icon and label INSIDE puzzle */
+
+.ggc-team .team-puzzle .puzzle-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20%;
+  box-sizing: border-box;
+  color: #20334d;
+  pointer-events: none;
+  text-shadow: none;
+}
+
+.ggc-team .team-puzzle .puzzle-icon {
+  display: block;
+  flex: none;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  stroke: currentColor;
+}
+
+.ggc-team .team-puzzle .puzzle-content span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: clamp(15px, 1.5vw, 21px);
+  font-weight: 650;
+  line-height: 1.2;
+  letter-spacing: -.5px;
+  white-space: normal;
+}
+
+/* Hover */
+
+.ggc-team button.team-puzzle:hover {
+  transform: translateY(-15px) rotate(0deg) scale(1.045);
+  z-index: 5;
+}
+
+.ggc-team button.team-puzzle:hover .puzzle-svg {
+  filter:
+    drop-shadow(0 16px 15px rgba(35,50,70,.13))
+    drop-shadow(0 28px 25px rgba(35,50,70,.13));
+}
+
+.ggc-team button.team-puzzle:focus-visible {
+  outline: 3px solid #4285f4;
+  outline-offset: 8px;
+}
+
+/* Bottom instruction */
+
+.ggc-team .team-instruction {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto 0;
+  padding: 13px 25px;
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 100px;
+  background: rgba(255,255,255,.75);
+  box-shadow: 0 8px 25px rgba(40,60,100,.07);
+  color: #72809e;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .ggc-team .team-puzzle-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 600px;
+    gap: 18px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+  .ggc-team {
+    min-height: auto;
+    padding: 85px 15px 80px;
+  }
+
+  .ggc-team .team-puzzle-grid {
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .ggc-team .team-puzzle .puzzle-content {
+    gap: 6px;
+    padding: 18%;
+  }
+
+  .ggc-team .team-puzzle .puzzle-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ggc-team .team-puzzle .puzzle-content span {
+    font-size: clamp(12px, 3.2vw, 17px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ggc-team button.team-puzzle {
+    transition: none;
+  }
+}
+
+/* =====================================
+   GGC — PREMIUM TEAM CATEGORY CARDS
+===================================== */
+
+.ggc-team {
+  padding: 110px 5% 130px;
+  background: #f8faff;
+  text-align: center;
+}
+
+.ggc-team .team-heading {
+  margin: 0 auto 65px;
+}
+
+.ggc-team .team-eyebrow {
+  color: #4285f4;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 3px;
+}
+
+.ggc-team .team-heading h2 {
+  margin: 18px 0;
+  color: #1d2638;
+  font-size: clamp(38px, 5vw, 65px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.ggc-team .team-heading h2 span {
+  color: #4285f4;
+}
+
+.ggc-team .team-heading p {
+  color: #78869c;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ggc-team .team-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.ggc-team .team-category-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 32px;
+  background: #fff;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 15px 45px rgba(30, 50, 80, .07);
+  transition:
+    transform .45s cubic-bezier(.2,.8,.2,1),
+    box-shadow .45s ease;
+}
+
+.ggc-team .team-category-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 55px rgba(30, 50, 80, .13);
+}
+
+.ggc-team .team-card-top {
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px 32px 0 0;
+}
+
+.ggc-team .team-blue {
+  background: #4285f4;
+}
+
+.ggc-team .team-red {
+  background: #ea4335;
+}
+
+.ggc-team .team-yellow {
+  background: #fbbc05;
+}
+
+.ggc-team .team-green {
+  background: #34a853;
+}
+
+.ggc-team .team-card-label {
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.ggc-team .team-card-bottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 270px;
+  padding: 30px 26px;
+}
+
+.ggc-team .team-card-bottom h3 {
+  margin: 0 0 20px;
+  color: #111827;
+  font-size: clamp(22px, 2vw, 29px);
+  font-weight: 800;
+  letter-spacing: -.8px;
+  line-height: 1.2;
+}
+
+.ggc-team .team-card-bottom p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.ggc-team .team-card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 35px;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.ggc-team .team-card-arrow {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f3f5;
+  font-size: 24px;
+  font-weight: 400;
+  transition: background .3s, transform .3s;
+}
+
+.ggc-team .team-category-card:hover .team-card-arrow {
+  background: #e2ecff;
+  transform: translateX(4px);
+}
+
+@media (max-width: 1100px) {
+  .ggc-team .team-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 850px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ggc-team {
+    padding: 80px 18px;
+  }
+
+  .ggc-team .team-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .ggc-team .team-card-top {
+    height: 180px;
+  }
+
+  .ggc-team .team-card-bottom {
+    min-height: 230px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ggc-team .team-category-card,
+  .ggc-team .team-card-arrow {
+    transition: none;
+  }
+}
